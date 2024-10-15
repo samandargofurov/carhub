@@ -10,7 +10,6 @@ import {
   ComboboxOptions,
   Transition,
 } from "@headlessui/react";
-import { Scrollbars } from 'react-custom-scrollbars-2';
 
 import { manufacturers } from "@/constants";
 import { SearchManufacturerProps } from "@/types";
@@ -61,12 +60,6 @@ const SearchManufacturer = ({
               afterLeave={() => setQuery("")}
             >
               <ComboboxOptions>
-                <Scrollbars
-                  style={{ width: "100%", height: "150px" }}
-                  autoHide
-                  autoHideTimeout={1000}
-                  autoHideDuration={200}
-                >
                   {filteredManufacturers.map((item) => (
                     <ComboboxOption
                       key={item}
@@ -88,7 +81,6 @@ const SearchManufacturer = ({
                       )}
                     </ComboboxOption>
                   ))}
-                </Scrollbars>
               </ComboboxOptions>
             </Transition>
           </div>
