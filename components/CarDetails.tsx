@@ -31,7 +31,7 @@ const CarDetails = ({ isOpen, closeModal, car }: CarDetailsProps) => {
             <div className="fixed inset-0 bg-black bg-opacity-25" />
           </TransitionChild>
 
-          <div className="fixed inset-0 overflow-y-auto">
+          <div className="fixed inset-0">
             <div className="flex min-h-full items-center justify-center p-4 text-center">
               <TransitionChild
                 enter="ease-out duration-300"
@@ -41,7 +41,7 @@ const CarDetails = ({ isOpen, closeModal, car }: CarDetailsProps) => {
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
-                <DialogPanel className="relative w-full max-w-lg max-h-[90vh] transform rounded-2xl bg-white p-6 text-left shadow-xl transition-all flex flex-col gap-5 overflow-auto">
+                <DialogPanel className="relative w-full max-w-lg max-h-[90vh] transform rounded-2xl bg-white p-6 text-left shadow-xl transition-all flex flex-col gap-5">
                   <button
                     type="button"
                     onClick={closeModal}
