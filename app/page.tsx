@@ -18,7 +18,7 @@ export default async function Home() {
           <p>Explore the cars you might like</p>
         </div>
 
-        <div className="home__filters">
+        <div className="home__filters z-0">
           <SearchBar />
 
           <div className="home__filter-container">
@@ -28,7 +28,7 @@ export default async function Home() {
         </div>
 
         {!isDataEmpty ? (
-          <div className="home__cars-wrapper">
+          <div className="home__cars-wrapper z-10">
             {allCars?.map((car) => (
               <CarCard car={car}
              />))}
