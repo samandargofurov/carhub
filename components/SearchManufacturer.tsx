@@ -33,7 +33,7 @@ const SearchManufacturer = ({
 
   return (
     <>
-      <div className="search-manufacturer group overflow-auto">
+      <div className="search-manufacturer sm:group sm:overflow-auto">
         <Combobox value={manufacturer} onChange={setManufacturer}>
           <div className="relative w-full">
             <ComboboxButton className="absolute top-[14px]">
